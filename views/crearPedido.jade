@@ -15,20 +15,11 @@ block content
         table
           thead
             tr
-              th(data-field='name') Producto
-              th(data-field='price') Precio
-          tbody
-            tr
-              td Eclair
-              td $0.87
-              td
-                input(type='checkbox', name='C1')
-            tr
-              td Jellybean
-              td $3.76
-            tr
-              td Lollipop
-              td $7.00
+              th(data-field='seleccion') Seleccionar
+              th(data-field='nombre') Producto
+              th(data-field='precio') Precio
+              th(data-field='cantidad') Cantidad
+          tbody.dataP
         h5.header.left  Seleccionar fecha de entrega
         input.datepicker(type='date')
         h5.header.left  Agregar comentarios
@@ -40,4 +31,4 @@ block content
                 textarea#icon_prefix2.materialize-textarea
                 label(for='icon_prefix2') Comentario
       .row.center
-        a#login.waves-effect.waves-light.btn.green(input='') Crear Pedido
+        a#registraPedido.waves-effect.waves-light.btn.green Crear Pedido

@@ -1,7 +1,7 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
   var Producto = sequelize.define('Producto', {
-    categoria: DataTypes.STRING,
+    categoria: DataTypes.ENUM(['SUBASTA', 'IJ', 'QR', 'ABARROTES', 'UV']),
     nombre: DataTypes.STRING,
     precio: DataTypes.FLOAT,
     comentario: DataTypes.TEXT,

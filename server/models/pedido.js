@@ -6,7 +6,7 @@ module.exports = function(sequelize, DataTypes) {
     comentario: DataTypes.TEXT,
     idUsuario:  {
       type:   DataTypes.INTEGER,
-      allowNull:  false,
+      allowNull:  true,
       references: 'Usuario',
       key:        'id'
     }

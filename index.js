@@ -19,7 +19,7 @@ app.get('/', (req, res) =>  {
 app.get('/verProductos', (req, res)  =>  {
   res.render('verProductos')
 })
-app.get('/agregarCliente', (req, res)  =>  {
+app.get('/agregarUsuario', (req, res)  =>  {
   res.render('agregarCliente')
 })
 app.get('/crearPedido', (req, res)  =>  {
@@ -27,6 +27,12 @@ app.get('/crearPedido', (req, res)  =>  {
 })
 app.get('/planDeCompra', (req, res)  =>  {
   res.render('planDeCompra')
+})
+app.get('/crearProducto', (req, res)  =>  {
+  res.render('crearProducto')
+})
+app.get('/verUsuario', (req, res)  =>  {
+  res.render('verCliente')
 })
 
 
