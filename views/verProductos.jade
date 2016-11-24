@@ -1,0 +1,20 @@
+extends index
+block content
+  .row.up
+    a#login.waves-effect.waves-light.btn.green(input='') REGRESAR
+  #index-banner.section.no-pad-bot
+    .container
+      br
+      br
+      h1.header.center
+        img.circle.responsive-img(src='/images/Sar.JPG', alt='')
+      h3.header.center
+        font(size='8') Ver productos
+      .row.center
+        table
+          thead
+            tr
+              th(data-field='name') Categoría
+              th(data-field='name') Nombre
+              th(data-field='price') Precio de venta
+          tbody.datos

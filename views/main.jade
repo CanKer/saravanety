@@ -1,0 +1,37 @@
+extends index
+block content
+  #index-banner.section.no-pad-bot
+    .container
+      br
+      br
+      h6.header.center
+        img.circle.responsive-img(src='/images/Sar.JPG', alt='')
+      .row.center
+        .row
+          .carousel
+            a.carousel-item(href='#one!')
+              img(src='/images/fruit1.jpg')
+            a.carousel-item(href='#two!')
+              img(src='/images/fruit2.jpg')
+            a.carousel-item(href='#three!')
+              img(src='/images/fruit3.jpg')
+            a.carousel-item(href='#four!')
+              img(src='/images/fruit4.jpg')
+            a.carousel-item(href='#five!')
+              img(src='/images/fruit5.jpg')
+          form.col.s12
+            .row
+              .input-field.col.s12
+                input#usuario.validate(type='text', name='username')
+                label(for='usuario') Usuario
+            .row
+              .input-field.col.s12
+                input#password.validate(type='password', name='password')
+                label(for='password') Contraseña
+      .row.center
+        a#login.waves-effect.waves-light.btn.green(input='', type='submit', value='Sevletlogin') Login
+      br
+      br
+  .container
+    br
+    br

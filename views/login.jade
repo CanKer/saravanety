@@ -1,0 +1,50 @@
+doctype html
+html(lang='en')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0')
+    title Saravanety Login
+    // CSS
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    link(href='css/materialize.css', type='text/css', rel='stylesheet', media='screen,projection')
+    link(href='css/style.css', type='text/css', rel='stylesheet', media='screen,projection')
+  body
+    #index-banner.section.no-pad-bot
+      .container
+        br
+        br
+        h6.header.center
+          img.circle.responsive-img(src='Sar.JPG', alt='')
+        .row.center
+          .row
+            .carousel
+              a.carousel-item(href='#one!')
+                img(src='fruit1.jpg')
+              a.carousel-item(href='#two!')
+                img(src='fruit2.jpg')
+              a.carousel-item(href='#three!')
+                img(src='fruit3.jpg')
+              a.carousel-item(href='#four!')
+                img(src='fruit4.jpg')
+              a.carousel-item(href='#five!')
+                img(src='fruit5.jpg')
+            form.col.s12
+              .row
+                .input-field.col.s12
+                  input#usuario.validate(type='text')
+                  label(for='usuario') Usuario
+              .row
+                .input-field.col.s12
+                  input#password.validate(type='password')
+                  label(for='password') Password
+        .row.center
+          a#login.waves-effect.waves-light.btn.green(input='') Login
+        br
+        br
+    .container
+      br
+      br
+    // Scripts
+    script(src='https://code.jquery.com/jquery-2.1.1.min.js')
+    script(src='js/materialize.js')
+    script(src='js/init.js')

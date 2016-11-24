@@ -1,0 +1,85 @@
+extends index
+block content
+  .row.up
+    a#login.waves-effect.waves-light.btn.green(input='') REGRESAR
+  #index-banner.section.no-pad-bot
+    .container
+      br
+      br
+      h1.header.center
+        img.circle.responsive-img(src='/images/Sar.JPG', alt='')
+      h2.header.center
+        font(size='8') Crear cliente
+      .row.center
+        .input-field.col.s6
+          input#nombre.validate(type='text')
+          label(for='nombre') Nombre
+        .input-field.col.s6
+          input#apellido.validate(type='text')
+          label(for='apellido') Apellido
+        .input-field.col.s6
+          input#calle.validate(type='text')
+          label(for='calle') Calle y número (interior, exterior)
+        .input-field.col.s6
+          input#colonia.validate(type='text')
+          label(for='colonia') Colonia
+        .input-field.col.s6
+          input#municipio.validate(type='text')
+          label(for='municipio') Municipio
+        .input-field.col.s6
+          input#restaurante.validate(type='text')
+          label(for='restaurante') Nombre del restaurante
+        .input-field.col.s6
+          input#telefono1.validate(type='text')
+          label(for='telefono1') Telefono Principal (con lada)    
+        .input-field.col.s6
+          input#telefono2.validate(type='text')
+          label(for='telefono2') Telefono Opcional(con lada)    
+        .input-field.col.s6
+          input#encargado.validate(type='text')
+          label(for='encargado') Encargado
+        .input-field.col.s6
+          input#email.validate(type='email')
+          label(for='email') Email
+        .input-field.col.s6
+          input#password.validate(type='password')
+          label(for='password') Contraseña
+        .input-field.col.s6
+          select#estado
+            option(value='', disabled='', selected='') Seleccionar Estado
+            option(value='Aguascalientes') Aguascalientes
+            option(value='Baja California') Baja California
+            option(value='Baja California Sur') Baja California Sur
+            option(value='Campeche') Campeche
+            option(value='Coahuila') Coahuila
+            option(value='Colima') Colima
+            option(value='Chiapas') Chiapas
+            option(value='Chihuahua') Chihuahua
+            option(value='Ciudad de México') Ciudad de México
+            option(value='Durango') Durango
+            option(value='Guanajuato') Guanajuato
+            option(value='Guerrero') Guerrero
+            option(value='Hidalgo') Hidalgo
+            option(value='Jalisco') Jalisco
+            option(value='México') México
+            option(value='Michoacán') Michoacán
+            option(value='Morelos') Morelos
+            option(value='Nayarit') Nayarit
+            option(value='Nuevo León') Nuevo León
+            option(value='Oaxaca') Oaxaca
+            option(value='Puebla') Puebla
+            option(value='Querétaro') Querétaro
+            option(value='Quintana Roo') Quintana Roo
+            option(value='San Luis Potosí') San Luis Potosí
+            option(value='Sinaloa') Sinaloa
+            option(value='Sonora') Sonora
+            option(value='Tabasco') Tabasco
+            option(value='Tamaulipas') Tamaulipas
+            option(value='Tlaxcala') Tlaxcala
+            option(value='Veracruz') Veracruz
+            option(value='Yucatán') Yucatán
+            option(value='Zacatecas') Zacatecas
+          label Estado
+      button.btn.waves-effect.waves-light.green#guardaCliente(name='action')
+        | Submit
+        i.material-icons.right send

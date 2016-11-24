@@ -1,0 +1,36 @@
+doctype html
+html(lang='en')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0')
+    title Saravanety Client
+    // CSS
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    link(href='css/materialize.css', type='text/css', rel='stylesheet', media='screen,projection')
+    link(href='css/style.css', type='text/css', rel='stylesheet', media='screen,projection')
+  body
+    br
+    br
+    .row.up
+      a#login.waves-effect.waves-light.btn.green(input='') REGRESAR
+    #index-banner.section.no-pad-bot
+      .container
+        br
+        br
+        h1.header.center
+          img.circle.responsive-img(src='Sar.JPG', alt='')
+        h3.header.center  Menu Cliente
+        .row.center
+          .row
+            .collection
+              a.collection-item(input='#!') Crear Pedido
+              a.collection-item(input='#!') Ver Pedido
+        br
+        br
+    .container
+      br
+      br
+    // Scripts
+    script(src='https://code.jquery.com/jquery-2.1.1.min.js')
+    script(src='js/materialize.js')
+    script(src='js/init.js')

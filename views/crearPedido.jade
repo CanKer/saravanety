@@ -1,0 +1,43 @@
+extends index
+block content
+  .row.up
+    a#login.waves-effect.waves-light.btn.green(href='') REGRESAR
+  #index-banner.section.no-pad-bot
+    .container
+      br
+      br
+      h1.header.center
+        img.circle.responsive-img(src='/images/Sar.JPG', alt='')
+      h3.header.center
+        font(size='8') Crear pedido
+      .row.center
+        h5.header.left  Seleccionar productos
+        table
+          thead
+            tr
+              th(data-field='name') Producto
+              th(data-field='price') Precio
+          tbody
+            tr
+              td Eclair
+              td $0.87
+              td
+                input(type='checkbox', name='C1')
+            tr
+              td Jellybean
+              td $3.76
+            tr
+              td Lollipop
+              td $7.00
+        h5.header.left  Seleccionar fecha de entrega
+        input.datepicker(type='date')
+        h5.header.left  Agregar comentarios
+        .row
+          form.col.s12
+            .row
+              .input-field.col.s6
+                i.material-icons.prefix mode_edit
+                textarea#icon_prefix2.materialize-textarea
+                label(for='icon_prefix2') Comentario
+      .row.center
+        a#login.waves-effect.waves-light.btn.green(input='') Crear Pedido

@@ -1,0 +1,84 @@
+doctype html
+html(lang='en')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0')
+    title Crear Producto
+    script(type='text/javascript').
+      function valideDatos() {
+      var nombreDeProducto = document.getElementById("nombreDeProducto");
+      var precioDeVenta = document.getElementById("precioDeVenta");
+      var categoria = document.getElementById("categoria");
+      var lugarDeCompra = document.getElementById("lugarDeCompra");
+      if( (precioDeVenta.value == "" || precioDeVenta.value == '' || precioDeVenta == null) &&
+      (nombreDeProducto.value == "" || nombreDeProducto.value == '' || nombreDeProducto.value == null) ){
+      alert("Falta uno o más datos por ingresar");
+      nombreDeProducto.focus();
+      return false;
+      } else if(nombreDeProducto.value == "" || nombreDeProducto.value == '' || nombreDeProducto == null){
+      alert("Ingresa el nombre de producto");
+      nombreDeProducto.focus();
+      return false;
+      } else if (precioDeVenta.value == "" || precioDeVenta.value == '' || precioDeVenta.value == null){
+      alert("Ingresa el precio de venta");
+      precioDeVenta.focus();
+      return false;
+      } else if(categoria.value == ""){
+      alert("Seleccione una categoria");
+      } else if(lugarDeCompra.value == "" || lugarDeCompra.value == '' || lugarDeCompra.value == null){
+      alert("Seleccione un lugar de compra");
+      }
+      else{
+      return true;
+      }
+      }
+    // CSS
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    link(href='css/materialize.css', type='text/css', rel='stylesheet', media='screen,projection')
+    link(href='css/style.css', type='text/css', rel='stylesheet', media='screen,projection')
+  body
+    #index-banner.section.no-pad-bot
+      .container
+        br
+        br
+        h1.header.center
+          img.circle.responsive-img(src='Sar.JPG', alt='')
+        h2.header.center  Agregar Producto
+        .row.center
+          .row
+            form.col.s12(onsubmit='return valideDatos();')
+              .row
+                .input-field.col.s6
+                  input#nombreDeProducto.validate(type='text')
+                  label(for='first_name') Nombre
+                .input-field.col.s6
+                  input#precioDeVenta.validate(type='text')
+                  label(for='sale_price') Precio de venta
+                .input-field.col.s6
+              .row
+                .input-field.col.s12
+                  select#categoria
+                    option(value='', disabled='', selected='') Seleccionar Categoria
+                    option(value='1') Subasta
+                    option(value='2') IJ
+                    option(value='3')  QR
+                    option(value='3') Abarrotes
+                    option(value='3') UV
+                  label Categoria
+              .row
+                .input-field.col.s12
+                  input#lugarDeCompra.validate(type='text')
+                  label(for='lugarDeCompra') Comentarios
+              .row.center
+                button.btn.waves-effect.waves-light.green(type='submit', name='action')
+                  | Crear Producto
+                  i.material-icons.right send
+        br
+        br
+    .container
+      br
+      br
+    // Scripts
+    script(src='https://code.jquery.com/jquery-2.1.1.min.js')
+    script(src='js/materialize.js')
+    script(src='js/init.js')

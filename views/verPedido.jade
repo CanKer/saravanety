@@ -1,0 +1,74 @@
+doctype html
+html(lang='en')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1.0')
+    title Saravanety Login
+    // CSS
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons', rel='stylesheet')
+    link(href='css/materialize.css', type='text/css', rel='stylesheet', media='screen,projection')
+    link(href='css/style.css', type='text/css', rel='stylesheet', media='screen,projection')
+  body
+    br
+    br
+    .row.up
+      a#login.waves-effect.waves-light.btn.green(input='') REGRESAR
+    #index-banner.section.no-pad-bot
+      .container
+        br
+        br
+        h1.header.center
+          img.circle.responsive-img(src='Sar.JPG', alt='')
+        h3.header.center
+          font(size='8') Ver pedidos
+        .row.center
+          table
+            thead
+              tr
+                th(data-field='id') Pedido
+                th(data-field='name') Producto
+                th(data-field='name') Fecha de inicio
+                th(data-field='name') Fecha de entrega
+                th(data-field='price') Total
+            tbody
+              tr
+                td 00000
+                td Cebolla morada
+                td 11/09/2016
+                td 12/09/2016
+                td $0.87
+                td
+                  input(type='checkbox', name='C1')
+              tr
+                td 01234
+                td Cebolla blanca
+                td 22/10/2016
+                td 23/10/2016
+                td $3.76
+              tr
+                td 002345
+                td Platano manzano
+                td 28/09/2016
+                td 29/09/2016
+                td $7.00
+              tr
+                td 010345
+                td Manzana golden
+                td 28/09/2016
+                td 29/09/2016
+                td $7.00
+              tr
+                td 012045
+                td Fresas
+                td 28/09/2016
+                td 29/09/2016
+                td $7.00
+        br
+        br
+    .container
+      br
+      br
+    // Scripts
+    script(src='https://code.jquery.com/jquery-2.1.1.min.js')
+    script(src='js/materialize.js')
+    script(src='js/init.js')
